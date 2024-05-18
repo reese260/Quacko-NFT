@@ -1,0 +1,114 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  /* Adjust padding to ensure content is not hidden by the fixed navbar */
+  body, html {
+    padding-top: 56px; /* Adjust based on your navbar's height */
+  }
+
+  .custom-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    position: fixed;
+    top: 20px; /* Gap from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 40px;
+    border-radius: 50px; /* Creates the oval shape */
+    background-color: skyblue; /* Sky blue background */
+    z-index: 10;
+  }
+  
+  .custom-navbar a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .custom-navbar a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* Card Styles */
+.card {
+    max-width: 40rem; /* Makes the card larger */
+    margin: 2rem auto; /* Centers the card on the page with top margin */
+    text-align: center; /* Centers the card's text */
+    background-color: #87CEEB; /* Light sky blue background */
+    color: #ffffff; /* White text */
+    font-family: 'Montserrat', sans-serif; /* Applies Montserrat font */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    padding: 2rem; /* Adds padding inside the card */
+    border: none; /* Removes the default border */
+    margin-top: 5rem; /* Adds space at the top */
+  }
+  
+  .card-title {
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: 700; /* Bold for the title */
+    margin-bottom: 1.5rem; /* Adds space below the title */
+  }
+  
+  .card-text {
+    font-size: 1.2rem; /* Slightly larger font size for the text */
+    font-weight: 400; /* Regular weight for the text */
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%; /* Allows the card to adjust to smaller screens */
+      margin-top: 2rem; /* Less space at the top on small devices */
+    }
+  
+    .card-title, .card-text {
+      font-size: 1.5rem; /* Adjusts font size for readability on small devices */
+    }
+  }
+  
+  .custom-card {
+    border-radius: 20px; /* Rounded borders */
+    border: 2px solid #87CEEB; /* Sky blue border */
+    text-align: center; /* Center text within cards */
+  }
+  
+  /* You may want to adjust the vertical space before the row of new cards */
+  .my-5 py-5 {
+    margin-top: 1rem; /* Adds some top margin */
+    padding-top: 1rem; /* Adds some top padding */
+  }
+  
+  .platypus-intro {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    text-align: center; /* Centers the text */
+    margin-bottom: 2rem; /* Adds some space before the cards */
+    color: white; /* Dark color for better readability */
+    line-height: 1.5; /* Improves text readability */
+    border-radius: 20px; /* Rounded borders */
+    border: 20px solid #87CEEB; /* Sky blue border */
+    text-align: center; /* Center text within cards */
+    background-color: #87CEEB;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border-radius: 15px;
+  }
+
+  .connect-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  
